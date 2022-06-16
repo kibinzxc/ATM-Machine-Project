@@ -12,36 +12,47 @@ public class deposit extends checkBal{
 		System.out.println("==================================================");
 		deposit = Integer.parseInt(br.readLine());
 		
-		if (newBalance < 500 && deposit < 500){
+		//First Time Deposit Policy
+		if (newBalance < maintainBal && deposit < maintainBal){
 			System.out.println("==================================================");
-			System.out.println("Invalid Action" +
-								"\n" + "To perform this action, you must deposit atleast 500 Php for your first deposit");
+			System.out.println("Invalid Action\n" +
+								"\n" + "To perform this action, you must deposit atleast 500 PHP for your first deposit");
 		System.out.println("==================================================");
 		}
+		
+		//Minimum Deposit is 50 PHP
 		else if (deposit < 50) {
 			System.out.println("==================================================");
-			System.out.println("The minimum deposit is 50Php.");
+			System.out.println("The minimum deposit is 50 PHP.");
 			System.out.println("==================================================");
 		}
+		
+		//Deposit
 		else{
 			System.out.println("==================================================");
-			System.out.print("Confirm Deposit? (Y/N):");
+			System.out.print("Confirm Deposit? (Y/N):"); //Confirmation
 				checkDeposit = (char)br.read();
 				br.readLine();
+				
+				//Confirm
 				if(checkDeposit=='y' || checkDeposit=='Y'){
 					balance = balance + deposit;
 					System.out.println("==================================================");
-					System.out.println("You have deposited " + deposit + "Php");
+					System.out.println("You have deposited " + deposit + "PHP");
 					System.out.println("==================================================");
-					System.out.println("Your new balance is " + balance + "Php");
+					System.out.println("Your new balance is " + balance + "PHP");
 					System.out.println("==================================================");
-			
-				}else if(checkDeposit=='n' || checkDeposit=='N'){
+				}
+				
+				//Cancel
+				else if(checkDeposit=='n' || checkDeposit=='N'){
 					System.out.println("==================================================");
 					System.out.println("The action has been cancelled");
 					System.out.println("==================================================");
-			}else{
-				System.out.println("Error!");
+			}
+				//Error
+				else{
+					System.out.println("Error!");
 			}
 			
 		}

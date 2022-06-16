@@ -1,12 +1,14 @@
 import java.io.*;
 public class checkBal {
-	//current balance
+	//Current Balance
 	public static int balance = 0; 
-	//display balance
+	//Maintaining Balance
+	public static int maintainBal = 500; 
+	//Display Balance
 	public static void checkBal(){
 		if (balance==0){
 			System.out.println("==================================================");
-			System.out.println("Your Balance is " + balance + " Php");
+			System.out.println("Your Balance is " + balance + " PHP");
 			System.out.println("==================================================");
 			System.out.println("Warning: Your balance is below the maintaining balance\n");
 			System.out.println("To avoid the closure of your account, deposit an amount" 
@@ -14,7 +16,7 @@ public class checkBal {
 			System.out.println("==================================================");
 		}else{
 		System.out.println("==================================================");
-		System.out.println("Your Balance is " + balance + " Php");
+		System.out.println("Your Balance is " + balance + " PHP");
 		System.out.println("==================================================");}
 	}
 }
