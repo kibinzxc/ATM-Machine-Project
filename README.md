@@ -2,7 +2,6 @@
 
 A simple console-based ATM system written in C that allows users to log in, check their balance, deposit money, and withdraw funds. This is a basic simulation of an Automated Teller Machine, ideal for understanding control structures and file handling in C.
 
----
 
 ## 📌 Features
 
@@ -21,7 +20,6 @@ A simple console-based ATM system written in C that allows users to log in, chec
 - 🚪 **Exit**  
   Log out and terminate the session.
 
----
 
 ## 🛠️ Technologies Used
 
@@ -30,7 +28,6 @@ A simple console-based ATM system written in C that allows users to log in, chec
 - **Interface**: Console / Command Line  
 - **Storage**: File-based (account number, PIN, and balance)
 
----
 
 ## 🙌 Author
 
