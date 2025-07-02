@@ -1,7 +1,6 @@
 # 🏧 ATM Machine Project
 
-A simple console-based ATM system written in C that allows users to log in, check their balance, deposit money, and withdraw funds. This is a basic simulation of an Automated Teller Machine, ideal for understanding control structures and file handling in C.
-
+A simple console-based ATM system written in Java that allows users to log in, check their balance, deposit money, and withdraw funds. This basic simulation demonstrates foundational concepts in Java such as object-oriented programming, user input handling, and simple logic flow.
 
 ## 📌 Features
 
@@ -23,11 +22,9 @@ A simple console-based ATM system written in C that allows users to log in, chec
 
 ## 🛠️ Technologies Used
 
-- **Language**: C  
-- **Compiler**: GCC or any C compiler  
+- **Language**: Java  
 - **Interface**: Console / Command Line  
-- **Storage**: File-based (account number, PIN, and balance)
-
+- **Data Storage**: In-memory data (no database or file storage)
 
 ## 🙌 Author
 
